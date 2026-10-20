@@ -1,0 +1,9 @@
+<section>
+  <h2>Products</h2>
+
+  <div class="buttons">
+   @for (num of buttonsArray; track num) {
+     <button [routerLink]="['/details',num]">{{num}}</button>
+   }
+  </div>
+</section>

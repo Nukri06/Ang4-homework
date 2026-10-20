@@ -1,0 +1,16 @@
+<div class="details-cont">
+    <a routerLink="/home">Back to home</a>
+
+    @if(selectedProduct){
+        <div class="card">
+            <img [src]="selectedProduct.image" alt="">
+            <h2>{{selectedProduct.brand}} {{selectedProduct.model}}</h2>
+            <p>Price: {{selectedProduct.price}} $</p>
+            <p>Stock:{{selectedProduct.stock}}</p>
+        </div>
+        
+    }@else {
+        <p class="error">დაფიქსირდა შეცდომა</p>
+    }
+
+</div>
